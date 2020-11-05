@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Dinner from './Dinner';
+import Lunch from './Lunch'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <hr/>
+        <Lunch DishName1= "rotti " DishName2= "Milk Pruducts"></Lunch>  /*this comonnet you could not return more than one componet at same  */
+        <hr/>
+        <Dinner DishName= "Chicken Karahi"/>  
+        <hr/>
+        <Dinner DishName= "Chicken Korma"/>
+      </div>
   );
 }
 
